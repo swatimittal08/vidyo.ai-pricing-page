@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Public+Sans:wght@100;200;300;400;600;700&family=Roboto+Mono:wght@500&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f7dc5e7dcb.js" crossorigin="anonymous"></script>
+  <title>Pricing Page Webflow Assignment</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+    <img src="assets/Logo.png" alt="Logo">
+  </div>
+
+  <div class="heading-txt">
+  <div class="text-align-center">
+    <div>
+      <div class="margin-bottom margin-small">
+      <h1 class="top-heading">Save 10x time &amp; effort with us</h1>
+      </div>
+    </div>
+    <p class="text-garlic-700">Pay only for upload minutes. Download unlimited videos.</p></div>
+  </div>
+
+  <div class="btn-container">
+    <div class="switch-wrapper">
+    <input id="monthly" type="radio" name="switch" >
+    <input id="yearly" type="radio" name="switch" checked>
+    <label for="monthly">Monthly</label>
+    <label for="yearly">Yearly <span class ="offer">Upto 51% Off </span></label>
+    <span class="highlighter"></span>
+  </div>
+  </div>
+  
+  <div class="mid-container">
+  <div class="slider-container">
+    <div class="slider-txt">
+        <h2>Suggesting an ideal plan for producing around <span id="sliderValue" class="chips">125 </span><span class="chips">Clips</span> monthly</h2>
+    </div>
+    
+    <div class="slider">
+      <div class="custom-rangeslider">
+        <input class="custom-rangeInput" title="Percentage" id="range-slider1" type="range" min="50" max="200" value="125" step="1" data-tooltip="true" aria-controls="rangeTooltip rangeLabel" aria-live="polite">
+        <span class="custom-rangeslider__tooltip">125</span>
+        <span class="custom-rangeslider__label"></span>
+        <span class="custom-rangeslider__label-min">50</span>
+        <span class="custom-rangeslider__label-max">200+</span> 
+      </div>
+    </div>
+  </div>
+
+<div class="cards-container">
+<div class="packages">
+    <h3 class="first">Free</h3>
+    <h1 class="text1">USD 0<span class="month">/month</span></h1>
+    <h1 class="text2">USD 0 <span class="month">/month</span></h1>
+    <br>
+    
+    <button class="button">Start for Free </button>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <ul class="list">
+      <li>&#10003; 75 mins per month</li>
+      <li>&#10003; 720p render quality</li>
+      <li>&#10003; Multi-Lingual features</li>
+      <li>&#10003; Cut Magic</li>
+    </ul>    
+  </div>
+
+  <div class="packages">
+    <h3 class="first">Essential</h3>
+    <h1 class="text1">USD 42 <span class="month">/month</span></h1>
+    <h1 class="text2">USD 42 <span class="month">/month</span></h1>
+    <p>Billed annually at <b>22% off</b></p>
+    <br>
+    <button class="button">Choose This Plan &#10784;</button>
+
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <ul class="list">
+      <li>&#10003; Everything in Free plan</li>
+      <li>&#10003; 200-500 mins per month/li>
+      <li>&#10003; 1080p render quality</li>
+      <li>&#10003; Import with integrations (Drive,Dropbox,Box)</li>
+      <li>&#10003; Intelliclips</li>
+    </ul>
+  </div>
+
+  <div class="packages growth-card black-theme">
+    <h3 class="first">Growth <span class ="offer">Recommended</span></h3>
+    <span class="highlighter"></span>
+    <h1 class="text1">USD 68 <span class="month">/month</span></h1>
+    <h1 class="text2">USD 68 <span class="month">/month</span></h1>
+    <p>Billed annually at <b>35% off</b></p>
+    <br>
+   
+    <button class="button">Choose this plan &#10784;</button>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <ul class="list">
+      <li>&#10003; Everything in Essential plan</li>
+      <li>&#10003; 200-1000 mins per month</li>
+      <li>&#10003; 1080p render quality</li>
+      <li>&#10003; Bulk export (upto 5)</li>
+      <li>&#10003; Bulk multi-social publishing</li>
+    </ul>
+  </div>
+
+  <div class="packages custom-card">
+    <h3 class="first">Custom</h3>
+    <h1 class="text1">USD 80 <span class="month">/month</span></h1>
+    <h1 class="text2">USD 80 <span class="month">/month</span></h1>
+    <p>Billed annually at <b>42% off</b></p>
+    <br>
+    
+    <button class="button">Choose this plan &#10784;</button>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <select id="minutes-dropdown">
+        <option value="75">75 mins</option>
+        <option value="90">90 mins</option>
+        <option value="120">120 mins</option>
+    </select>
+    <ul class="list">
+      <li>&#10003; Everything in Growth plan</li>
+      <li>&#10003; 400-1000 mins per month</li>
+      <li>&#10003; 4K render quality</li>
+      <li>&#10003; Bulk export</li>
+      <li>&#10003; Multiple brand kits</li>
+    </ul>
+    
+  </div>
+</div>
+
+</div>
+<div class="toggle-btn-contatiner">
+    <div class="toggle-btn">
+        <button class="toggle"  onclick="toggle()"> View all features <div class="square toggle-up" onclick="toggle()">&#9650;</div></button>
+    </div>
+    <div class="hidden">
+    <div class="feature-header">
+      <h2>Core</h2>
+      <div id="dropdown-button" class="dropdown">
+        <button class="dropbtn" onclick="toggle()"><div class="square toggle-up" onclick="toggle()">&#9650;</div></button>  
+      </div>
+    </div>
+      
+      <table id="toggle-table" class="table-hidden">
+        <tr class="static-hading">
+          <td>Features</td>
+          <td>Free</td>
+          <td>Essential</td>
+          <td>Growth</td>
+          <td>Custom</td>
+        </tr>
+    
+        <tr>
+          <td>Minutes per month</td>
+          <td>75 mins</td>
+          <td>200-500 mins</td>
+          <td>200-1000 mins</td>
+          <td>400 - 1000 mins</td>
+        </tr>
+        <tr>
+          <td>Render Quality</td>
+          <td>720p</td>
+          <td>1080p</td>
+          <td>1080p</td>
+          <td>4K</td>
+        </tr>
+        <tr>
+          <td>Import with Youtube or Computer Upload</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Import with Integrations (Drive, Dropbox, Box)</td>
+          <td>&#10005; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>AI Subtitles (Captions)</td>
+          <td>&#10005; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Multi-lingual feature</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Chapters</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Credit Saver</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Intelliclips</td>
+          <td>&#10005; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Virality Score</td>
+          <td>&#10005; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Bulk export</td>
+          <td>&#10005; </td>
+          <td>&#10005; </td>
+          <td>Upto 5 </td>
+          <td>unlimited </td>
+        </tr>
+        <tr>
+          <td>Multiple Aspect Ratio</td>
+          <td>&#10005; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Default Templates</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Create Custom Clip</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Cutmagic</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Auto-Emoji</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Fancy Captions</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Progress bar</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Stock Media (Pexels, etc)</td>
+          <td>&#10005; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Background Audio</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Custom Backgrounds</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Save Draft</td>
+          <td>&#10003; </td>
+          <td>3 per project </td>
+          <td>10 per project </td>
+          <td>25 per project </td>
+        </tr>
+        <tr>
+          <td>Edit Downloaded Video</td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+          <td>&#10003; </td>
+        </tr>
+        <tr>
+          <td>Data Retention</td>
+          <td>90 days </td>
+          <td>180 days </td>
+          <td>180 days </td>
+          <td>Custom ? </td>
+        </tr>
+       
+      </table>
+      <div class="feature-header">
+        <h2>Brand kit</h2>
+        <div  class="dropdown">
+          <button class="dropbtn" onclick="toggle()"><div class="square toggle-up" onclick="toggle()">&#9650;</div></button>  
+        </div>
+      </div>
+      
+      <div class="feature-header">
+        <h2>Social</h2>
+        <div  class="dropdown">
+          <button class="dropbtn" onclick="toggle()"><div class="square toggle-up" onclick="toggle()">&#9650;</div></button>  
+        </div>
+      </div>
+       
+      </table>
+      <div class="feature-header">
+        <h2>Meta Data</h2>
+        <div id="dropdown-button" class="dropdown">
+            <button class="dropbtn" onclick="toggle()"><div class="square toggle-up" onclick="toggle()">&#9650;</div></button>
+        </div>
+      </div>
+      
+    </table>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="./script.js"></script>
+
+</body> 
+</html>
